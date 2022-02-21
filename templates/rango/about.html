@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+{% load staticfiles %} <!-- New line -->
+
+<html>
+    <head> 
+        <title>Rango</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static "css/base.css" %}" /> <!-- JavaScript -->
+        <script src="{% static "js/jquery.js" %}"></script>
+    </head>
+
+    <body>
+        <div>here is the about page. <br />
+            This tutorial has been put together by tianyuan.wang.
+            <strong>{{ boldmessage2 }}</strong><br /> 
+        </div>
+
+        <div>
+            <a href="/rango/">Index</a><br />
+            <img src="{% static "images/rango.jpg" %}" alt="Picture of Rango" /> <!-- New line -->
+            <img src="{{ MEDIA_URL }}cat.jpg" alt="Picture of a Cat." /> <!-- New line -->
+        </div> 
+    </body>
+</html>
