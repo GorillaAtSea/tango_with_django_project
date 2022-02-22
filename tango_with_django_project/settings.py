@@ -92,7 +92,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
@@ -135,3 +134,9 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = MEDIA_DIR
 
 MEDIA_URL = '/media/'
+
+
+# python manage.py createsuperuser
+# User: ITech
+# mailbox: 2521798W@student.gla.ac.uk
+# password: ITechnology
