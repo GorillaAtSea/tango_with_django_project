@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 
-{% load staticfiles %} <!-- New line -->
+{% extends 'rango/base.html' %} 
+{% load staticfiles %}
 
+{% block title_block %}
+About Rango
+{% endblock %}
+
+<!--
 <html>
     <head> 
-        <title>Rango</title>
+        <title> Rango - About Rango </title>
         <!-- CSS -->
         <link rel="stylesheet" href="{% static "css/base.css" %}" /> <!-- JavaScript -->
         <script src="{% static "js/jquery.js" %}"></script>
