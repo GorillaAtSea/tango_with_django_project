@@ -10,9 +10,10 @@
         <div>
         {% if category %}
             <h1>{{ category.name }}</h1>
+            <a href="/rango/category/{{ category.slug }}/add_page/">Add Page</a> <br/> 
             <ul>
                 {% for category in categories %}
-                <li> <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a> </li>
+                <li> <a href="/rango/category/{{ category.slug }}/">{{ category.name }}ss </a></li>
                 {% endfor %}
             </ul>
 
@@ -29,6 +30,7 @@
             The specified category does not exist.
         {% endif %}
         </div>
+
         <a href="/rango/">Index</a><br />
     </body>
 </html>
